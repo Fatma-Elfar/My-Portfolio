@@ -6,16 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fatma Ashraf Elfar | Frontend & React Developer</title>
 
-  <!-- Google Fonts: Space Grotesk & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap"
     rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
   <script src="https://cdn.tailwindcss.com"></script>
+  
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -69,7 +67,6 @@
   </script>
 
   <style>
-    /* Neon glow borders & custom scrollbar */
     ::-webkit-scrollbar {
       width: 8px;
     }
@@ -104,7 +101,7 @@
     }
 
     .card-hover:hover {
-      transform: translateY(-5px);
+      transform: translateY(-4px);
       border-color: rgba(255, 30, 66, 0.55);
       box-shadow: 0 15px 35px -10px rgba(255, 30, 66, 0.25);
     }
@@ -116,12 +113,10 @@
       -webkit-text-fill-color: transparent;
     }
 
-    /* Red radial ambient glow */
     .radial-glow {
       background: radial-gradient(circle at 50% 50%, rgba(255, 30, 66, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
     }
 
-    /* Cursor blink */
     .typing-cursor {
       display: inline-block;
       width: 3px;
@@ -131,20 +126,16 @@
     }
 
     @keyframes blink {
-
-      0%,
-      100% {
+      0%, 100% {
         opacity: 1;
       }
-
       50% {
         opacity: 0;
       }
     }
   </style>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body
@@ -154,9 +145,8 @@
   <header class="fixed top-0 left-0 w-full z-50 px-4 sm:px-8 pt-4 pb-2 transition-all duration-300" id="navbar">
     <div class="max-w-6xl mx-auto">
       <div
-        class="bg-night-900/80 dark:bg-night-900/80 bg-white/90 backdrop-blur-md border border-crimson-900/40 dark:border-crimson-900/50 rounded-full px-5 py-2.5 flex items-center justify-between shadow-lg shadow-black/40">
+        class="bg-white/90 dark:bg-night-900/80 backdrop-blur-md border border-crimson-900/40 dark:border-crimson-900/50 rounded-full px-5 py-2.5 flex items-center justify-between shadow-lg shadow-black/40">
 
-        <!-- Logo -->
         <a href="#home" class="flex items-center gap-2.5 group">
           <div
             class="w-8 h-8 rounded-full bg-gradient-to-tr from-crimson-900 to-crimson-neon flex items-center justify-center text-white text-xs font-heading font-extrabold shadow-crimson-glow">
@@ -168,38 +158,28 @@
           </span>
         </a>
 
-        <!-- Desktop Navigation Links -->
-        <nav class="hidden md:flex items-center gap-6 text-xs sm:text-sm font-medium tracking-wide uppercase">
+        <nav class="hidden md:flex items-center gap-5 text-xs font-semibold tracking-wide uppercase">
           <a href="#home" class="text-crimson-neon transition-colors hover:text-crimson-400">Home</a>
           <a href="#about" class="text-zinc-600 dark:text-zinc-300 hover:text-crimson-neon transition-colors">About</a>
-          <a href="#certificates"
-            class="text-zinc-600 dark:text-zinc-300 hover:text-crimson-neon transition-colors">Certificates</a>
-          <a href="#education"
-            class="text-zinc-600 dark:text-zinc-300 hover:text-crimson-neon transition-colors">Education</a>
-          <a href="#skills"
-            class="text-zinc-600 dark:text-zinc-300 hover:text-crimson-neon transition-colors">Skills</a>
-          <a href="#projects"
-            class="text-zinc-600 dark:text-zinc-300 hover:text-crimson-neon transition-colors">Projects</a>
-          <a href="#contact"
-            class="text-zinc-600 dark:text-zinc-300 hover:text-crimson-neon transition-colors">Contact</a>
+          <a href="#skills" class="text-zinc-600 dark:text-zinc-300 hover:text-crimson-neon transition-colors">Skills</a>
+          <a href="#services" class="text-zinc-600 dark:text-zinc-300 hover:text-crimson-neon transition-colors">Services</a>
+          <a href="#projects" class="text-zinc-600 dark:text-zinc-300 hover:text-crimson-neon transition-colors">Projects</a>
+          <a href="#education" class="text-zinc-600 dark:text-zinc-300 hover:text-crimson-neon transition-colors">Education & Training</a>
+          <a href="#contact" class="text-zinc-600 dark:text-zinc-300 hover:text-crimson-neon transition-colors">Contact</a>
         </nav>
 
-        <!-- Action Items (Theme Toggle & Hire Me Button) -->
         <div class="flex items-center gap-3">
-          <!-- Dark/Light Mode Button -->
           <button id="themeToggleBtn" type="button" aria-label="Toggle Theme"
             class="w-9 h-9 rounded-full flex items-center justify-center border border-crimson-900/40 text-zinc-700 dark:text-zinc-200 hover:text-crimson-neon hover:border-crimson-neon transition-all bg-zinc-100 dark:bg-night-850">
             <i id="themeIcon" class="fa-solid fa-moon text-sm"></i>
           </button>
 
-          <!-- Hire Me Neon Pill -->
           <a href="#contact"
             class="hidden sm:inline-flex items-center gap-2 text-xs font-semibold uppercase px-5 py-2 rounded-full bg-gradient-to-r from-crimson-dark via-crimson-600 to-crimson-neon text-white shadow-crimson-glow hover:opacity-95 hover:scale-105 active:scale-95 transition-all">
-            <span>Hire Me</span>
+            <span>Get In Touch</span>
             <i class="fa-solid fa-paper-plane text-[10px]"></i>
           </a>
 
-          <!-- Mobile Hamburger Toggle -->
           <button id="mobileMenuBtn" aria-label="Toggle mobile navigation"
             class="md:hidden w-9 h-9 rounded-full flex items-center justify-center text-zinc-800 dark:text-zinc-100 hover:text-crimson-neon">
             <i class="fa-solid fa-bars text-base" id="hamburgerIcon"></i>
@@ -208,26 +188,19 @@
 
       </div>
 
-      <!-- Mobile Dropdown Menu -->
       <div id="mobileMenu"
         class="hidden md:hidden mt-2 bg-white/95 dark:bg-night-900/95 backdrop-blur-xl border border-crimson-900/50 rounded-2xl p-5 shadow-2xl transition-all">
         <nav class="flex flex-col gap-3.5 text-sm font-semibold uppercase tracking-wider">
           <a href="#home" class="mobile-nav-link text-crimson-neon py-1">Home</a>
-          <a href="#about"
-            class="mobile-nav-link text-zinc-700 dark:text-zinc-300 hover:text-crimson-neon py-1">About</a>
-          <a href="#certificates"
-            class="mobile-nav-link text-zinc-700 dark:text-zinc-300 hover:text-crimson-neon py-1">Certificates</a>
-          <a href="#education"
-            class="mobile-nav-link text-zinc-700 dark:text-zinc-300 hover:text-crimson-neon py-1">Education</a>
-          <a href="#skills"
-            class="mobile-nav-link text-zinc-700 dark:text-zinc-300 hover:text-crimson-neon py-1">Skills</a>
-          <a href="#projects"
-            class="mobile-nav-link text-zinc-700 dark:text-zinc-300 hover:text-crimson-neon py-1">Projects</a>
-          <a href="#contact"
-            class="mobile-nav-link text-zinc-700 dark:text-zinc-300 hover:text-crimson-neon py-1">Contact</a>
+          <a href="#about" class="mobile-nav-link text-zinc-700 dark:text-zinc-300 hover:text-crimson-neon py-1">About</a>
+          <a href="#skills" class="mobile-nav-link text-zinc-700 dark:text-zinc-300 hover:text-crimson-neon py-1">Skills</a>
+          <a href="#services" class="mobile-nav-link text-zinc-700 dark:text-zinc-300 hover:text-crimson-neon py-1">Services</a>
+          <a href="#projects" class="mobile-nav-link text-zinc-700 dark:text-zinc-300 hover:text-crimson-neon py-1">Projects</a>
+          <a href="#education" class="mobile-nav-link text-zinc-700 dark:text-zinc-300 hover:text-crimson-neon py-1">Education & Training</a>
+          <a href="#contact" class="mobile-nav-link text-zinc-700 dark:text-zinc-300 hover:text-crimson-neon py-1">Contact</a>
           <a href="#contact"
             class="inline-flex justify-center items-center gap-2 text-xs uppercase px-4 py-2.5 rounded-xl bg-gradient-to-r from-crimson-dark to-crimson-neon text-white font-bold mt-2 shadow-crimson-glow">
-            <span>Hire Me</span>
+            <span>Get In Touch</span>
             <i class="fa-solid fa-paper-plane text-xs"></i>
           </a>
         </nav>
@@ -237,7 +210,6 @@
   </header>
 
   <main class="relative overflow-hidden pt-28 pb-16">
-    <!-- Ambient Red Background Orbs -->
     <div
       class="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[700px] radial-glow pointer-events-none -z-10 opacity-70">
     </div>
@@ -251,26 +223,22 @@
     <section id="home" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-14">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
 
-        <!-- Hero Text Column -->
         <div class="lg:col-span-7 flex flex-col items-start space-y-6">
 
-          <!-- Sub-badge -->
           <div
             class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-crimson-900/60 bg-crimson-950/40 backdrop-blur-md shadow-inner">
             <span class="w-2 h-2 rounded-full bg-crimson-neon animate-ping"></span>
             <span class="w-2 h-2 rounded-full bg-crimson-neon -ml-3"></span>
-            <span class="text-xs font-semibold uppercase tracking-widest text-crimson-400">Available for Frontend
-              Opportunities</span>
+            <span class="text-xs font-semibold uppercase tracking-widest text-crimson-400">Available for Junior Frontend Roles</span>
           </div>
 
-          <!-- Main Greeting -->
           <div class="space-y-2">
             <p class="text-sm sm:text-base font-semibold tracking-widest text-zinc-400 uppercase">
               FATMA ASHRAF ELFAR
             </p>
             <h1
               class="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight text-zinc-900 dark:text-white leading-tight">
-              Hi, I'm <span class="text-crimson-gradient">FATMA</span>
+              Hi, I'm <span class="text-crimson-gradient">Fatma</span>
               <span class="text-crimson-neon">🌹</span>
             </h1>
             <div
@@ -281,27 +249,19 @@
             </div>
           </div>
 
-          <!-- Description / Bio -->
           <p class="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-xl">
-            Fourth-year Computer Science student at <span class="text-zinc-900 dark:text-zinc-200 font-medium">Tanta
-              University</span> with an Excellent cumulative grade. Junior Frontend Developer with hands-on experience
-            in React.js,
-            JavaScript, responsive web design, and REST API integration. I enjoy building clean, user-friendly web
-            interfaces and continuously improving my frontend skills.
+            Computer Science student at <strong class="text-zinc-900 dark:text-zinc-200 font-semibold">Tanta University</strong> with an <span class="text-crimson-neon font-semibold">Excellent</span> cumulative grade, graduating in 2027. I build responsive, user-focused web interfaces with React.js and modern JavaScript, with attention to clean components, responsive layouts, and practical API integration.
           </p>
 
-          <!-- Action CTA Buttons & Social Icons -->
           <div class="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
-            <!-- Download CV button -->
-            <a href="https://fatmaelfar13.getportify.com/" target="_blank" rel="noopener noreferrer"
+            <a href="./Fatma_Elfar.pdf" download rel="noopener noreferrer"
               class="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-gradient-to-r from-crimson-dark via-crimson-700 to-crimson-neon text-white font-semibold text-sm shadow-crimson-glow hover:shadow-crimson-glow-lg hover:scale-105 active:scale-95 transition-all">
               <i class="fa-solid fa-download text-sm"></i>
               <span>Download CV</span>
             </a>
 
-            <!-- Social Links Pill -->
             <div
-              class="flex items-center gap-2 px-3 py-2 rounded-full border border-crimson-900/50 bg-night-900/70 dark:bg-night-900/80 backdrop-blur-md">
+              class="flex items-center gap-2 px-3 py-2 rounded-full border border-crimson-900/50 bg-night-900/70 dark:bg-night-900/80 backdrop-blur-md bgLight">
               <a href="https://github.com/Fatma-Elfar" target="_blank" rel="noopener noreferrer"
                 aria-label="GitHub Profile"
                 class="w-8 h-8 rounded-full flex items-center justify-center text-zinc-400 hover:text-crimson-neon hover:bg-crimson-950/50 transition-all">
@@ -316,105 +276,63 @@
                 class="w-8 h-8 rounded-full flex items-center justify-center text-zinc-400 hover:text-crimson-neon hover:bg-crimson-950/50 transition-all">
                 <i class="fa-solid fa-envelope text-base"></i>
               </a>
-              <a href="tel:01095964665" aria-label="Phone Call"
+              <a href="tel:01095964665" aria-label="Phone Number"
                 class="w-8 h-8 rounded-full flex items-center justify-center text-zinc-400 hover:text-crimson-neon hover:bg-crimson-950/50 transition-all">
                 <i class="fa-solid fa-phone text-sm"></i>
               </a>
             </div>
           </div>
 
-          <!-- Quick Micro Badges -->
           <div class="flex flex-wrap gap-2 pt-1 text-xs font-mono text-zinc-500 dark:text-zinc-400">
-            <span class="px-2.5 py-1 rounded-md bg-zinc-200/60 dark:bg-night-850 border border-crimson-900/30">📍
-              El-Santa, Egypt</span>
-            <span class="px-2.5 py-1 rounded-md bg-zinc-200/60 dark:bg-night-850 border border-crimson-900/30">🎓
-              Expected Graduation: 2027</span>
-            <span class="px-2.5 py-1 rounded-md bg-zinc-200/60 dark:bg-night-850 border border-crimson-900/30">⚡ 120h
-              ITI React Training</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-200/60 dark:bg-night-850 border border-crimson-900/30">📍 El-Santa, Egypt</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-200/60 dark:bg-night-850 border border-crimson-900/30">🎓 Graduation: 2027</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-200/60 dark:bg-night-850 border border-crimson-900/30">⚡ 120h ITI React Graduate</span>
           </div>
 
         </div>
 
-        <!-- Hero Stylized Photo Placeholder (EMPTY PHOTO FRAME PER REQUEST) -->
         <div class="lg:col-span-5 flex justify-center items-center">
           <div class="relative group w-full max-w-sm sm:max-w-md">
-
-            <!-- Background Glow effect -->
             <div
-              class="absolute -inset-1.5 bg-gradient-to-r from-crimson-900 via-crimson-neon to-crimson-dark rounded-3xl blur-xl opacity-60 group-hover:opacity-85 transition duration-1000 group-hover:duration-200 animate-pulse-slow">
-            </div>
+              class="relative rounded-3xl bg-zinc-900 dark:bg-night-950/90 border-2 border-crimson-neon/80 p-5 shadow-crimson-glow outer_light">
 
-            <!-- Neon Edge Container -->
-            <div
-              class="relative rounded-3xl bg-night-950/90 dark:bg-night-950/90 bg-zinc-900 border-2 border-crimson-neon/80 p-5 shadow-crimson-glow">
-
-              <!-- Japanese Style Minimalist Tag -->
               <div class="flex justify-between items-center mb-4 text-xs font-mono text-crimson-400 tracking-wider">
                 <span class="flex items-center gap-1.5">
                   <i class="fa-solid fa-code text-[11px] text-crimson-neon"></i>
-                  <span>DEVELOPER PORTRAIT</span>
+                  <span>DEVELOPER PROFILE</span>
                 </span>
                 <span
-                  class="px-2 py-0.5 rounded bg-crimson-950 border border-crimson-900/80 text-[10px] text-crimson-300">FE-2026</span>
+                  class="px-2 py-0.5 rounded bg-crimson-950 border border-crimson-900/80 text-[10px] text-crimson-300">REACT DEV</span>
               </div>
 
-              <!-- Empty Image Area with Cyberpunk Grid Accent -->
               <div
-                class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden border border-dashed border-crimson-700/60 bg-gradient-to-b from-night-900 via-[#150307] to-night-950 flex flex-col items-center justify-center text-center p-6 transition-all duration-300 hover:border-crimson-neon group">
+                class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden border border-dashed border-crimson-700/60 bg-gradient-to-b via-[#150307] to-night-950 flex flex-col items-center justify-center text-center p-6 transition-all duration-300 hover:border-crimson-neon group inner_light">
                 <img src="./images/my_photo.png" alt="my-photo" style="border-radius: 20px;">
-                <!-- Silhouette / Upload Graphic -->
-                <!-- <div class="relative mb-4">
-                  <div
-                    class="w-24 h-24 rounded-full bg-gradient-to-b from-crimson-900/40 to-crimson-neon/20 border border-crimson-600/40 flex items-center justify-center text-crimson-400 group-hover:scale-110 group-hover:text-crimson-neon transition-transform duration-300 shadow-inner">
-                    <i class="fa-regular fa-user text-4xl"></i>
-                  </div>
-                  <div
-                    class="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-crimson-neon text-white flex items-center justify-center text-xs shadow-crimson-glow">
-                    <i class="fa-solid fa-camera"></i>
-                  </div>
-                </div> -->
-
-                <!-- Guidance labels -->
-                <!-- <h2 class="text-base font-heading font-bold text-white tracking-wide">
-                  Your Photo Here
-                </h2> -->
-                <!-- <p class="text-sm font-arabic font-medium text-crimson-300 mt-1">
-                  ضعي صورتك الشخصية هنا
-                </p> -->
-                <!-- <p class="text-xs text-zinc-400 max-w-[210px] mt-2 leading-relaxed font-sans">
-                  Replace this inner container with your <code class="text-crimson-400 font-mono">&lt;img&gt;</code> tag
-                  whenever ready.
-                </p> -->
-
-                <!-- Neon corner accents -->
                 <span class="absolute top-2 left-2 w-3 h-3 border-t-2 border-l-2 border-crimson-neon"></span>
                 <span class="absolute top-2 right-2 w-3 h-3 border-t-2 border-r-2 border-crimson-neon"></span>
                 <span class="absolute bottom-2 left-2 w-3 h-3 border-b-2 border-l-2 border-crimson-neon"></span>
                 <span class="absolute bottom-2 right-2 w-3 h-3 border-b-2 border-r-2 border-crimson-neon"></span>
               </div>
 
-              <!-- Bottom Bar Status -->
               <div
                 class="mt-4 pt-3 border-t border-crimson-900/40 flex items-center justify-between text-xs text-zinc-400">
                 <span class="flex items-center gap-2">
-                  <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                  <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
                   <span>React.js Ready</span>
                 </span>
                 <span class="font-mono text-crimson-400">F. ELFAR</span>
               </div>
 
             </div>
-
           </div>
         </div>
-
       </div>
 
       <div class="mt-14 pt-8 border-t border-crimson-900/30">
         <div
-          class="bg-night-900/60 dark:bg-night-900/60 bg-white/70 border border-crimson-900/40 rounded-2xl py-4 px-6 shadow-inner">
+          class="bg-white/70 dark:bg-night-900/60 border border-crimson-900/40 rounded-2xl py-4 px-6 shadow-inner">
           <div
-            class="flex flex-wrap items-center justify-around gap-6 text-zinc-400 dark:text-zinc-400 text-xs sm:text-sm font-heading font-semibold uppercase tracking-wider">
+            class="flex flex-wrap items-center justify-around gap-6 text-zinc-700 dark:text-zinc-400 text-xs sm:text-sm font-heading font-semibold uppercase tracking-wider">
             <div class="flex items-center gap-2 hover:text-crimson-neon transition-colors">
               <i class="fa-brands fa-react text-lg text-crimson-neon"></i>
               <span>React.js</span>
@@ -445,12 +363,10 @@
     </section>
 
     <section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-
-      <!-- Section Title Badge -->
       <div class="text-center mb-12">
         <div
           class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-crimson-950/60 border border-crimson-800/50 text-crimson-neon text-xs uppercase font-bold tracking-widest mb-2">
-          <span>⛩️ Get To Know Me ⛩️</span>
+          <span>⛩️ About Me ⛩️</span>
         </div>
         <h2 class="text-2xl sm:text-4xl font-heading font-extrabold text-zinc-900 dark:text-white">
           About <span class="text-crimson-gradient">Fatma</span>
@@ -460,446 +376,348 @@
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
-        <!-- Left Column: Bio & Counter Stats -->
+        <!-- Left: Truthful Grounded Bio -->
         <div
-          class="lg:col-span-7 bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/30 rounded-3xl p-6 sm:p-8 card-hover shadow-card-glow flex flex-col justify-between">
-          <div>
-            <h3 class="text-xl font-heading font-bold text-zinc-900 dark:text-white flex items-center gap-2 mb-4">
-              <i class="fa-solid fa-terminal text-crimson-neon"></i>
-              <span>Passionate Junior Frontend Developer</span>
+          class="lg:col-span-7 bg-white dark:bg-night-900/70 border border-crimson-900/30 rounded-3xl p-6 sm:p-8 card-hover shadow-card-glow flex flex-col justify-between">
+          <div class="space-y-4">
+            <h3 class="text-xl font-heading font-bold text-zinc-900 dark:text-white flex items-center gap-2.5">
+              <i class="fa-solid fa-code text-crimson-neon"></i>
+              <span>Junior Frontend & React Developer</span>
             </h3>
-            <p class="text-zinc-600 dark:text-zinc-300 text-sm sm:text-base leading-relaxed mb-6">
-              I’m a Computer Science student at <span class="font-semibold text-zinc-900 dark:text-white">Tanta
-                University</span>and a Junior Frontend Developer interested in building responsive and user-friendly web
-              applications. I have completed frontend training and gained hands-on experience with HTML, CSS,
-              JavaScript, Bootstrap, React.js, Git, and REST APIs through training and personal projects.
-              <!-- <span class="text-crimson-neon font-semibold">Excellent</span>. -->
-            <p style="margin-top: 2rem;"
-              class="text-zinc-600 dark:text-zinc-300 text-sm sm:text-base leading-relaxed mb-6">
-              I’m currently continuing to develop my React skills through practical projects and professional training,
-              while building a portfolio that reflects my technical and problem-solving abilities.
+
+            <p class="text-zinc-600 dark:text-zinc-300 text-sm sm:text-base leading-relaxed">
+              I am a fourth-year Computer Science student at <strong class="text-zinc-900 dark:text-white font-semibold">Tanta University</strong> with an <span class="text-crimson-neon font-semibold">Excellent</span> cumulative grade. My primary focus is Frontend Development and building web applications with <strong class="text-zinc-900 dark:text-white font-semibold">React.js</strong>.
             </p>
+
+            <p class="text-zinc-600 dark:text-zinc-300 text-sm sm:text-base leading-relaxed">
+              I enjoy turning designs, ideas, and wireframes into functional, interactive web interfaces. In every project, I pay close attention to responsive behavior, clean spacing, and breaking interfaces into reusable React components. Through practical projects and structured training programs at ITI, DEPI, and Route, I am continuously improving how I write code and handle application state.
             </p>
+
+            <!-- Personal Development Approach -->
+            <div class="my-4 p-4 sm:p-5 rounded-2xl bg-zinc-100 dark:bg-night-850 border-l-4 border-crimson-neon border-zinc-200 dark:border-y-crimson-900/20 dark:border-r-crimson-900/20">
+              <p class="text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 italic leading-relaxed">
+                “I enjoy bridging the gap between design and development — turning visual ideas into responsive interfaces while keeping the code organized, reusable, and easy to maintain.”
+              </p>
+            </div>
           </div>
 
-          <!-- 4 Stats Counter Grid -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-crimson-900/30 text-center">
+          <!-- Academic & Focus Metric Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-crimson-900/30 text-center">
             <div class="p-3 rounded-2xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/20">
-              <p class="text-2xl sm:text-3xl font-heading font-extrabold text-crimson-neon">4th</p>
-              <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Year CS Student</p>
+              <p class="text-xl sm:text-2xl font-heading font-extrabold text-crimson-neon">Excellent</p>
+              <p class="text-[11px] text-zinc-500 dark:text-zinc-400 mt-1">Cumulative Grade</p>
             </div>
             <div class="p-3 rounded-2xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/20">
-              <p class="text-2xl sm:text-3xl font-heading font-extrabold text-crimson-neon">120h</p>
-              <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">ITI Training</p>
+              <p class="text-xl sm:text-2xl font-heading font-extrabold text-crimson-neon">4th Year</p>
+              <p class="text-[11px] text-zinc-500 dark:text-zinc-400 mt-1">CS Student</p>
             </div>
             <div class="p-3 rounded-2xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/20">
-              <p class="text-2xl sm:text-3xl font-heading font-extrabold text-crimson-neon">React</p>
-              <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Main Focus</p>
+              <p class="text-xl sm:text-2xl font-heading font-extrabold text-crimson-neon">React.js</p>
+              <p class="text-[11px] text-zinc-500 dark:text-zinc-400 mt-1">Core Focus</p>
             </div>
             <div class="p-3 rounded-2xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/20">
-              <p class="text-2xl sm:text-3xl font-heading font-extrabold text-crimson-neon">2027</p>
-              <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Graduation</p>
+              <p class="text-xl sm:text-2xl font-heading font-extrabold text-crimson-neon">2027</p>
+              <p class="text-[11px] text-zinc-500 dark:text-zinc-400 mt-1">Graduation</p>
             </div>
           </div>
         </div>
 
-        <!-- Right Column: Japanese Fan-Style Cards (Philosophy & Mission) -->
+        <!-- Right: Approach Highlights -->
         <div class="lg:col-span-5 flex flex-col gap-6">
 
-          <!-- My Philosophy Card -->
           <div
-            class="p-6 rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/30 card-hover shadow-card-glow relative overflow-hidden">
+            class="p-6 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/30 card-hover shadow-card-glow relative overflow-hidden">
             <div class="absolute -right-6 -bottom-6 text-crimson-900/10 text-8xl pointer-events-none select-none">
-              <i class="fa-solid fa-compass"></i>
+              <i class="fa-solid fa-cubes"></i>
             </div>
             <div
               class="w-10 h-10 rounded-xl bg-crimson-950 border border-crimson-700/50 flex items-center justify-center text-crimson-neon mb-4">
-              <i class="fa-solid fa-code"></i>
+              <i class="fa-solid fa-layer-group"></i>
             </div>
-            <h4 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-2">My Philosophy</h4>
+            <h4 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-2">Clean Component Structure</h4>
             <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              Writing clean, modular React components while treating performance and responsive layout as primary
-              features, not afterthoughts. Code should be as maintainable as it is fast.
+              Structuring React applications with modular, reusable components and organized state so features remain straightforward to extend and maintain.
             </p>
           </div>
 
-          <!-- The Mission Card -->
           <div
-            class="p-6 rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/30 card-hover shadow-card-glow relative overflow-hidden">
+            class="p-6 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/30 card-hover shadow-card-glow relative overflow-hidden">
             <div class="absolute -right-6 -bottom-6 text-crimson-900/10 text-8xl pointer-events-none select-none">
-              <i class="fa-solid fa-bullseye"></i>
+              <i class="fa-solid fa-mobile-screen"></i>
             </div>
             <div
               class="w-10 h-10 rounded-xl bg-crimson-950 border border-crimson-700/50 flex items-center justify-center text-crimson-neon mb-4">
-              <i class="fa-solid fa-rocket"></i>
+              <i class="fa-solid fa-eye"></i>
             </div>
-            <h4 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-2">The Mission</h4>
+            <h4 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-2">Responsive & Detailed UI</h4>
             <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              Transforming wireframes and complex RESTful APIs into seamless, highly accessible user interfaces that
-              leave lasting impressions across web browsers and mobile devices.
+              Ensuring layouts adapt predictably across desktops, tablets, and phones, while keeping visual details, colors, and typography aligned with design mockups.
             </p>
           </div>
 
         </div>
 
-      </div>
-    </section>
-
-    <section id="certificates" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-
-      <div class="text-center mb-12">
-        <div
-          class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-crimson-950/60 border border-crimson-800/50 text-crimson-neon text-xs uppercase font-bold tracking-widest mb-2">
-          <span>📜 Training & Credentials 📜</span>
-        </div>
-        <h2 class="text-2xl sm:text-4xl font-heading font-extrabold text-zinc-900 dark:text-white">
-          Certificates & <span class="text-crimson-gradient">Training</span>
-        </h2>
-        <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-2 max-w-lg mx-auto">
-          Intensive developer programs focused on React.js ecosystem, state management, and modern workflows.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-        <!-- Certificate 1: ITI React -->
-        <div
-          class="p-6 rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/40 card-hover shadow-card-glow flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-start mb-4">
-              <span
-                class="px-3 py-1 rounded-full text-[11px] font-mono font-bold bg-crimson-950 border border-crimson-700/60 text-crimson-300">
-                120 Hours React Training
-              </span>
-              <span class="text-xs font-mono text-zinc-400">Jul – Aug 2026</span>
-            </div>
-            <div
-              class="w-12 h-12 rounded-2xl bg-gradient-to-br from-crimson-900/60 to-night-950 border border-crimson-neon/40 flex items-center justify-center text-crimson-neon text-xl mb-4">
-              <i class="fa-brands fa-react"></i>
-            </div>
-            <h3 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-1">
-              React.js Summer Training
-            </h3>
-            <p class="text-xs font-semibold text-crimson-400 uppercase tracking-wider mb-3">
-              Information Technology Institute (ITI)
-            </p>
-            <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
-              Practical training focused on React.js, JavaScript, frontend development, and building web applications
-              through hands-on projects.
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-crimson-900/30">
-            <span
-              class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">React
-              Hooks</span>
-            <span
-              class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">SPA</span>
-            <span
-              class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">REST
-              APIs</span>
-          </div>
-        </div>
-
-        <!-- Certificate 2: DEPI Track -->
-        <div
-          class="p-6 rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/40 card-hover shadow-card-glow flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-start mb-4">
-              <span
-                class="px-3 py-1 rounded-full text-[11px] font-mono font-bold bg-crimson-950 border border-crimson-700/60 text-crimson-300">
-                Active Track
-              </span>
-              <span class="text-xs font-mono text-zinc-400">2026 – Present</span>
-            </div>
-            <div
-              class="w-12 h-12 rounded-2xl bg-gradient-to-br from-crimson-900/60 to-night-950 border border-crimson-neon/40 flex items-center justify-center text-crimson-neon text-xl mb-4">
-              <i class="fa-solid fa-diagram-project"></i>
-            </div>
-            <h3 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-1">
-              React Front-End Web Developer
-            </h3>
-            <p class="text-xs font-semibold text-crimson-400 uppercase tracking-wider mb-3">
-              Digital Egypt Pioneers Initiative (DEPI)
-            </p>
-            <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
-              Ongoing training focused on React frontend development, practical projects, professional communication,
-              documentation, and freelancing skills.
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-crimson-900/30">
-            <span
-              class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">Advanced
-              React</span>
-            <span
-              class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">Proposals</span>
-            <span
-              class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">Soft
-              Skills</span>
-          </div>
-        </div>
-
-        <!-- Certificate 3: Route Academy -->
-        <div
-          class="p-6 rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/40 card-hover shadow-card-glow flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-start mb-4">
-              <span
-                class="px-3 py-1 rounded-full text-[11px] font-mono font-bold bg-crimson-950 border border-crimson-700/60 text-crimson-300">
-                Completed
-              </span>
-              <span class="text-xs font-mono text-zinc-400">May 2025</span>
-            </div>
-            <div
-              class="w-12 h-12 rounded-2xl bg-gradient-to-br from-crimson-900/60 to-night-950 border border-crimson-neon/40 flex items-center justify-center text-crimson-neon text-xl mb-4">
-              <i class="fa-solid fa-laptop-code"></i>
-            </div>
-            <h3 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-1">
-              Frontend Development
-            </h3>
-            <p class="text-xs font-semibold text-crimson-400 uppercase tracking-wider mb-3">
-              Route Academy
-            </p>
-            <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
-              Frontend development training covering HTML, CSS, JavaScript, responsive design, and practical web
-              development.
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-crimson-900/30">
-            <span
-              class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">HTML5/CSS3</span>
-            <span
-              class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">ES6+</span>
-            <span
-              class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">Bootstrap</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="education" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="text-center mb-12">
-        <div
-          class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-crimson-950/60 border border-crimson-800/50 text-crimson-neon text-xs uppercase font-bold tracking-widest mb-2">
-          <span>🎓 Academic Path 🎓</span>
-        </div>
-        <h2 class="text-2xl sm:text-4xl font-heading font-extrabold text-zinc-900 dark:text-white">
-          Education & <span class="text-crimson-gradient">Degrees</span>
-        </h2>
-      </div>
-
-      <div class="max-w-3xl mx-auto">
-        <!-- Education Card -->
-        <div class="relative pl-8 sm:pl-10 border-l-2 border-crimson-neon/60 py-2">
-
-          <!-- Glowing Node -->
-          <div
-            class="absolute -left-[11px] top-4 w-5 h-5 rounded-full bg-night-950 border-2 border-crimson-neon flex items-center justify-center shadow-crimson-glow">
-            <div class="w-2 h-2 rounded-full bg-crimson-neon"></div>
-          </div>
-
-          <div
-            class="p-6 sm:p-8 rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/40 card-hover shadow-card-glow">
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-              <h3 class="text-lg sm:text-xl font-heading font-bold text-zinc-900 dark:text-white">
-                Bachelor’s Degree in Computer Science
-              </h3>
-              <span
-                class="px-3 py-1 rounded-full bg-crimson-950 border border-crimson-800 text-crimson-300 font-mono text-xs font-semibold">
-                Expected 2027
-              </span>
-            </div>
-
-            <p class="text-sm font-semibold text-crimson-400 mb-3">
-              Tanta University — Faculty of Computers and Information
-            </p>
-            <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed" style="margin-bottom: 1rem;">
-              Expected Graduation: 2027</p>
-            <div
-              class="inline-block px-3 py-1 rounded-lg bg-green-950/40 border border-green-800/40 text-green-400 text-xs font-semibold mb-4">
-              ★ Cumulative Grade: Excellent
-            </div>
-
-            <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              Focusing on core computer science foundations, algorithms, object-oriented software engineering, web
-              architectures, and user interface systems.
-            </p>
-          </div>
-
-        </div>
       </div>
     </section>
 
     <section id="skills" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-
       <div class="text-center mb-12">
         <div
           class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-crimson-950/60 border border-crimson-800/50 text-crimson-neon text-xs uppercase font-bold tracking-widest mb-2">
           <span>⚡ Technical Stack ⚡</span>
         </div>
         <h2 class="text-2xl sm:text-4xl font-heading font-extrabold text-zinc-900 dark:text-white">
-          My <span class="text-crimson-gradient">Skills</span>
+          Skills & <span class="text-crimson-gradient">Technologies</span>
         </h2>
-        <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-2">
-          Technologies and tools I work with daily to construct modern web interfaces.
+        <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-2 max-w-lg mx-auto">
+          Technologies, libraries, and workflows I use across my frontend projects.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div
+          class="p-6 sm:p-7 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/30 shadow-card-glow card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div
+                class="w-11 h-11 rounded-2xl bg-crimson-950 border border-crimson-700/60 flex items-center justify-center text-crimson-neon text-lg shadow-crimson-glow">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <span class="text-[11px] font-mono uppercase tracking-wider text-crimson-400 bg-crimson-950/60 border border-crimson-900/60 px-2.5 py-1 rounded-full">Core</span>
+            </div>
+
+            <h3 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-2">
+              Frontend
+            </h3>
+            <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+              Semantic markup, styling standards, dynamic behavior, and responsive layouts.
+            </p>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-brands fa-html5 text-orange-500"></i> HTML5
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-brands fa-css3-alt text-blue-500"></i> CSS3
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-brands fa-js text-yellow-500"></i> JavaScript (ES6+)
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-brands fa-react text-crimson-neon"></i> React.js
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-brands fa-bootstrap text-purple-500"></i> Bootstrap
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-solid fa-mobile-screen text-crimson-400"></i> Responsive Design
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="p-6 sm:p-7 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/30 shadow-card-glow card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div
+                class="w-11 h-11 rounded-2xl bg-crimson-950 border border-crimson-700/60 flex items-center justify-center text-crimson-neon text-lg shadow-crimson-glow">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <span class="text-[11px] font-mono uppercase tracking-wider text-crimson-400 bg-crimson-950/60 border border-crimson-900/60 px-2.5 py-1 rounded-full">Architecture</span>
+            </div>
+
+            <h3 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-2">
+              React & Web Development
+            </h3>
+            <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+              Component lifecycle handling, state coordination, and asynchronous data fetching.
+            </p>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-solid fa-atom text-crimson-neon"></i> React Hooks
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-solid fa-diagram-project text-yellow-500"></i> Context API
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-solid fa-network-wired text-crimson-400"></i> REST APIs
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-solid fa-arrows-rotate text-blue-400"></i> Async/Await
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="p-6 sm:p-7 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/30 shadow-card-glow card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div
+                class="w-11 h-11 rounded-2xl bg-crimson-950 border border-crimson-700/60 flex items-center justify-center text-crimson-neon text-lg shadow-crimson-glow">
+                <i class="fa-solid fa-toolbox"></i>
+              </div>
+              <span class="text-[11px] font-mono uppercase tracking-wider text-crimson-400 bg-crimson-950/60 border border-crimson-900/60 px-2.5 py-1 rounded-full">Workflow</span>
+            </div>
+
+            <h3 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-2">
+              Tools & Professional Skills
+            </h3>
+            <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+              Version control practices alongside effective habits developed through coursework and training.
+            </p>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-brands fa-git-alt text-red-500"></i> Git
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-brands fa-github text-zinc-400"></i> GitHub
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-solid fa-lightbulb text-yellow-400"></i> Problem Solving
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-solid fa-handshake text-crimson-400"></i> Teamwork
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-solid fa-comments text-blue-400"></i> Communication
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-night-850 border border-crimson-900/30 text-xs font-medium text-zinc-800 dark:text-zinc-200">
+                <i class="fa-solid fa-magnifying-glass text-emerald-400"></i> Attention to Detail
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="services" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center mb-12">
+        <div
+          class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-crimson-950/60 border border-crimson-800/50 text-crimson-neon text-xs uppercase font-bold tracking-widest mb-2">
+          <span>💼 What I Do 💼</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-heading font-extrabold text-zinc-900 dark:text-white">
+          My <span class="text-crimson-gradient">Services</span>
+        </h2>
+        <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-2 max-w-lg mx-auto">
+         I help small businesses, startups, and individuals build responsive and modern web interfaces with React.js.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-        <!-- Frontend Development & React -->
+        <!-- Service 1: Responsive Web Development -->
         <div
-          class="p-6 sm:p-8 rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/30 shadow-card-glow card-hover">
-          <h3 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-6 flex items-center gap-2.5">
-            <i class="fa-brands fa-react text-crimson-neon text-xl"></i>
-            <span>Core & Frameworks</span>
-          </h3>
-
-          <div class="space-y-4">
-            <!-- Skill 1 -->
-            <div>
-              <div class="flex justify-between text-xs font-semibold mb-1 text-zinc-700 dark:text-zinc-300">
-                <span>React.js (Functional Components, Hooks, JSX)</span>
-                <!-- <span class="text-crimson-neon">90%</span> -->
-              </div>
-              <div class="w-full h-2 rounded-full bg-zinc-200 dark:bg-night-800 overflow-hidden">
-                <div class="h-full rounded-full bg-gradient-to-r from-crimson-900 to-crimson-neon" style="width: 90%">
-                </div>
-              </div>
+          class="group p-6 sm:p-8 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/30 card-hover shadow-card-glow relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute -right-8 -top-8 w-32 h-32 bg-crimson-neon/5 rounded-full blur-2xl group-hover:bg-crimson-neon/15 transition-all"></div>
+          <div>
+            <div
+              class="w-12 h-12 rounded-2xl bg-crimson-950 border border-crimson-700/60 flex items-center justify-center text-crimson-neon text-xl mb-5 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-laptop-code"></i>
             </div>
-
-            <!-- Skill 2 -->
-            <div>
-              <div class="flex justify-between text-xs font-semibold mb-1 text-zinc-700 dark:text-zinc-300">
-                <span>JavaScript (ES6+, DOM Manipulation, Async/Await)</span>
-                <!-- <span class="text-crimson-neon">88%</span> -->
-              </div>
-              <div class="w-full h-2 rounded-full bg-zinc-200 dark:bg-night-800 overflow-hidden">
-                <div class="h-full rounded-full bg-gradient-to-r from-crimson-900 to-crimson-neon" style="width: 88%">
-                </div>
-              </div>
-            </div>
-
-            <!-- Skill 3 -->
-            <div>
-              <div class="flex justify-between text-xs font-semibold mb-1 text-zinc-700 dark:text-zinc-300">
-                <span>HTML5 & CSS3 (Semantic markup, Flexbox, Grid)</span>
-                <!-- <span class="text-crimson-neon">95%</span> -->
-              </div>
-              <div class="w-full h-2 rounded-full bg-zinc-200 dark:bg-night-800 overflow-hidden">
-                <div class="h-full rounded-full bg-gradient-to-r from-crimson-900 to-crimson-neon" style="width: 95%">
-                </div>
-              </div>
-            </div>
-
-            <!-- Skill 4 -->
-            <div>
-              <div class="flex justify-between text-xs font-semibold mb-1 text-zinc-700 dark:text-zinc-300">
-                <span>Bootstrap & Responsive Web Layouts</span>
-                <!-- <span class="text-crimson-neon">90%</span> -->
-              </div>
-              <div class="w-full h-2 rounded-full bg-zinc-200 dark:bg-night-800 overflow-hidden">
-                <div class="h-full rounded-full bg-gradient-to-r from-crimson-900 to-crimson-neon" style="width: 90%">
-                </div>
-              </div>
-            </div>
+            <h3 class="text-lg sm:text-xl font-heading font-bold text-zinc-900 dark:text-white mb-2">
+              Responsive Web Development
+            </h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+              Building responsive interfaces that work across desktop, tablet, and mobile devices using clean HTML5, CSS3, and Bootstrap.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-crimson-900/30">
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-night-850 text-zinc-700 dark:text-zinc-300 border border-crimson-900/20">Mobile-First</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-night-850 text-zinc-700 dark:text-zinc-300 border border-crimson-900/20">Cross-Device</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-night-850 text-zinc-700 dark:text-zinc-300 border border-crimson-900/20">Flexbox & Grid</span>
           </div>
         </div>
 
-        <!-- APIs, Tools & Professional Workflow -->
+        <!-- Service 2: Figma to HTML/CSS -->
         <div
-          class="p-6 sm:p-8 rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/30 shadow-card-glow card-hover">
-          <h3 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-6 flex items-center gap-2.5">
-            <i class="fa-solid fa-network-wired text-crimson-neon text-xl"></i>
-            <span>Web APIs & Development Tools</span>
-          </h3>
-
-          <div class="space-y-4">
-            <!-- Skill 5 -->
-            <div>
-              <div class="flex justify-between text-xs font-semibold mb-1 text-zinc-700 dark:text-zinc-300">
-                <span>RESTful APIs, Fetch API, JSON Handling</span>
-                <!-- <span class="text-crimson-neon">88%</span> -->
-              </div>
-              <div class="w-full h-2 rounded-full bg-zinc-200 dark:bg-night-800 overflow-hidden">
-                <div class="h-full rounded-full bg-gradient-to-r from-crimson-900 to-crimson-neon" style="width: 88%">
-                </div>
-              </div>
+          class="group p-6 sm:p-8 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/30 card-hover shadow-card-glow relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute -right-8 -top-8 w-32 h-32 bg-crimson-neon/5 rounded-full blur-2xl group-hover:bg-crimson-neon/15 transition-all"></div>
+          <div>
+            <div
+              class="w-12 h-12 rounded-2xl bg-crimson-950 border border-crimson-700/60 flex items-center justify-center text-crimson-neon text-xl mb-5 group-hover:scale-110 transition-transform">
+              <i class="fa-brands fa-figma"></i>
             </div>
-
-            <!-- Skill 6 -->
-            <div>
-              <div class="flex justify-between text-xs font-semibold mb-1 text-zinc-700 dark:text-zinc-300">
-                <span>Git, GitHub & Version Control</span>
-                <!-- <span class="text-crimson-neon">85%</span> -->
-              </div>
-              <div class="w-full h-2 rounded-full bg-zinc-200 dark:bg-night-800 overflow-hidden">
-                <div class="h-full rounded-full bg-gradient-to-r from-crimson-900 to-crimson-neon" style="width: 85%">
-                </div>
-              </div>
-            </div>
-
-            <!-- Skill 7 -->
-            <div>
-              <div class="flex justify-between text-xs font-semibold mb-1 text-zinc-700 dark:text-zinc-300">
-                <span>Vite & npm Package Manager</span>
-                <!-- <span class="text-crimson-neon">82%</span> -->
-              </div>
-              <div class="w-full h-2 rounded-full bg-zinc-200 dark:bg-night-800 overflow-hidden">
-                <div class="h-full rounded-full bg-gradient-to-r from-crimson-900 to-crimson-neon" style="width: 82%">
-                </div>
-              </div>
-            </div>
-
-            <!-- Skill 8 -->
-            <div>
-              <div class="flex justify-between text-xs font-semibold mb-1 text-zinc-700 dark:text-zinc-300">
-                <span>Professional Communication & Proposals</span>
-                <!-- <span class="text-crimson-neon">85%</span> -->
-              </div>
-              <div class="w-full h-2 rounded-full bg-zinc-200 dark:bg-night-800 overflow-hidden">
-                <div class="h-full rounded-full bg-gradient-to-r from-crimson-900 to-crimson-neon" style="width: 85%">
-                </div>
-              </div>
-            </div>
+            <h3 class="text-lg sm:text-xl font-heading font-bold text-zinc-900 dark:text-white mb-2">
+              Figma to HTML/CSS
+            </h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+              Converting Figma designs into responsive and well-structured HTML/CSS interfaces with attention to spacing, font hierarchy, and layout details.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-crimson-900/30">
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-night-850 text-zinc-700 dark:text-zinc-300 border border-crimson-900/20">Accurate Spacing</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-night-850 text-zinc-700 dark:text-zinc-300 border border-crimson-900/20">Semantic Markup</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-night-850 text-zinc-700 dark:text-zinc-300 border border-crimson-900/20">Clean CSS</span>
           </div>
         </div>
 
-      </div>
+        <!-- Service 3: React Frontend Development -->
+        <div
+          class="group p-6 sm:p-8 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/30 card-hover shadow-card-glow relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute -right-8 -top-8 w-32 h-32 bg-crimson-neon/5 rounded-full blur-2xl group-hover:bg-crimson-neon/15 transition-all"></div>
+          <div>
+            <div
+              class="w-12 h-12 rounded-2xl bg-crimson-950 border border-crimson-700/60 flex items-center justify-center text-crimson-neon text-xl mb-5 group-hover:scale-110 transition-transform">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-heading font-bold text-zinc-900 dark:text-white mb-2">
+              React Frontend Development
+            </h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+              Building reusable React components and interactive frontend interfaces using React Hooks, Context API, and modern ES6+ JavaScript.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-crimson-900/30">
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-night-850 text-zinc-700 dark:text-zinc-300 border border-crimson-900/20">Reusable Components</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-night-850 text-zinc-700 dark:text-zinc-300 border border-crimson-900/20">State Management</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-night-850 text-zinc-700 dark:text-zinc-300 border border-crimson-900/20">Interactive UI</span>
+          </div>
+        </div>
 
-      <!-- Tech Badges Cloud -->
-      <div class="mt-8 flex flex-wrap justify-center gap-3">
-        <span
-          class="px-4 py-1.5 rounded-full bg-night-900/90 border border-crimson-800/40 text-xs font-mono text-crimson-300 hover:border-crimson-neon hover:text-white transition-all shadow-sm">React
-          Hooks (useState, useEffect)</span>
-        <span
-          class="px-4 py-1.5 rounded-full bg-night-900/90 border border-crimson-800/40 text-xs font-mono text-crimson-300 hover:border-crimson-neon hover:text-white transition-all shadow-sm">Single
-          Page Applications (SPA)</span>
-        <span
-          class="px-4 py-1.5 rounded-full bg-night-900/90 border border-crimson-800/40 text-xs font-mono text-crimson-300 hover:border-crimson-neon hover:text-white transition-all shadow-sm">Asynchronous
-          JS</span>
-        <span
-          class="px-4 py-1.5 rounded-full bg-night-900/90 border border-crimson-800/40 text-xs font-mono text-crimson-300 hover:border-crimson-neon hover:text-white transition-all shadow-sm">VS
-          Code Workflow</span>
-        <span
-          class="px-4 py-1.5 rounded-full bg-night-900/90 border border-crimson-800/40 text-xs font-mono text-crimson-300 hover:border-crimson-neon hover:text-white transition-all shadow-sm">Technical
-          Documentation</span>
+        <!-- Service 4: API Integration -->
+        <div
+          class="group p-6 sm:p-8 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/30 card-hover shadow-card-glow relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute -right-8 -top-8 w-32 h-32 bg-crimson-neon/5 rounded-full blur-2xl group-hover:bg-crimson-neon/15 transition-all"></div>
+          <div>
+            <div
+              class="w-12 h-12 rounded-2xl bg-crimson-950 border border-crimson-700/60 flex items-center justify-center text-crimson-neon text-xl mb-5 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-heading font-bold text-zinc-900 dark:text-white mb-2">
+              API Integration
+            </h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+              Connecting frontend applications to REST APIs and displaying dynamic data with appropriate loading and error states for user feedback.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-crimson-900/30">
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-night-850 text-zinc-700 dark:text-zinc-300 border border-crimson-900/20">Async/Await</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-night-850 text-zinc-700 dark:text-zinc-300 border border-crimson-900/20">Dynamic UI</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-night-850 text-zinc-700 dark:text-zinc-300 border border-crimson-900/20">Loading States</span>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <section id="projects" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-
       <div class="text-center mb-12">
         <div
           class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-crimson-950/60 border border-crimson-800/50 text-crimson-neon text-xs uppercase font-bold tracking-widest mb-2">
-          <span>🚀 Real-World Applications 🚀</span>
+          <span>🚀 Real Projects 🚀</span>
         </div>
         <h2 class="text-2xl sm:text-4xl font-heading font-extrabold text-zinc-900 dark:text-white">
           Key <span class="text-crimson-gradient">Projects</span>
         </h2>
         <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-2 max-w-lg mx-auto">
-          A selection of frontend projects built during my learning journey and practical training, focusing on
-          responsive UI, APIs, JavaScript, and React.
+          Hands-on frontend projects demonstrating responsive styling, REST API integration, and React components.
         </p>
       </div>
 
@@ -907,30 +725,20 @@
 
         <!-- Project 1: Movie App -->
         <div
-          class="rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/40 overflow-hidden card-hover shadow-card-glow flex flex-col justify-between">
-          <!-- Project Visual Banner -->
+          class="rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/40 overflow-hidden card-hover shadow-card-glow flex flex-col justify-between">
           <div
-            class="relative h-44 bg-gradient-to-tr from-crimson-950 via-night-900 to-crimson-900/40 flex items-center justify-center p-6 border-b border-crimson-900/30">
-            <!-- <div
-              class="w-16 h-16 rounded-2xl bg-night-950/80 border border-crimson-neon/60 flex items-center justify-center text-crimson-neon text-3xl shadow-crimson-glow">
-              <i class="fa-solid fa-film"></i>
-            </div> -->
-            <img src="./images/MovieApp.png" alt="MovieApp" style="border-radius: 20px;">
-            <!-- <span
-              class="absolute top-3 right-3 text-[10px] font-mono px-2.5 py-1 rounded-full bg-crimson-neon/20 border border-crimson-neon/50 text-crimson-300 font-bold">
-              TMDB API
-            </span> -->
+            class="relative h-48 bg-gradient-to-tr from-crimson-950 via-night-900 to-crimson-900/40 flex items-center justify-center p-4 border-b border-crimson-900/30 overflow-hidden">
+            <img src="./images/MovieApp.png" alt="Movie App preview" class="w-full h-full object-cover rounded-xl"
+              onerror="this.parentElement.innerHTML='<div class=\'flex items-center justify-center w-full h-full text-crimson-neon text-4xl\'><i class=\'fa-solid fa-film\'></i></div>'">
           </div>
 
-          <!-- Project Details -->
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
               <h3 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-2">
                 Movie App
               </h3>
               <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
-                A responsive movie discovery application built with React.js and the TMDB API. Users can browse movies,
-                view details, search for content, and manage their watchlist.
+                A responsive movie discovery application built with React.js and the TMDB API. Enables users to browse movies, search titles, and view details.
               </p>
             </div>
 
@@ -939,15 +747,21 @@
                 <span
                   class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">React.js</span>
                 <span
-                  class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">TMDB
-                  API</span>
+                  class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">TMDB API</span>
                 <span
                   class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">Bootstrap</span>
               </div>
-              <div class="flex items-center gap-3 pt-3 border-t border-crimson-900/30">
+              <div class="grid grid-cols-2 gap-2 pt-3 border-t border-crimson-900/30">
+                <span
+                  class="py-2 px-3 rounded-xl bg-zinc-100 dark:bg-night-850 border border-zinc-200 dark:border-crimson-900/30 text-zinc-400 text-xs font-semibold flex items-center justify-center gap-1.5 cursor-not-allowed select-none"
+                  title="Live Demo not deployed yet">
+                  <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                  <span>Live Demo</span>
+                </span>
                 <a href="https://github.com/Fatma-Elfar" target="_blank" rel="noopener noreferrer"
-                  class="flex-1 py-2 rounded-xl bg-gradient-to-r from-crimson-dark to-crimson-600 text-white text-xs font-semibold text-center hover:shadow-crimson-glow transition-all">
-                  <i class="fa-brands fa-github mr-1"></i> Code Repo
+                  class="py-2 px-3 rounded-xl bg-gradient-to-r from-crimson-dark to-crimson-600 text-white text-xs font-semibold flex items-center justify-center gap-1.5 hover:shadow-crimson-glow transition-all">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
                 </a>
               </div>
             </div>
@@ -956,18 +770,11 @@
 
         <!-- Project 2: Where in the World? -->
         <div
-          class="rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/40 overflow-hidden card-hover shadow-card-glow flex flex-col justify-between">
+          class="rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/40 overflow-hidden card-hover shadow-card-glow flex flex-col justify-between">
           <div
-            class="relative h-44 bg-gradient-to-tr from-[#120205] via-night-900 to-crimson-950 flex items-center justify-center p-6 border-b border-crimson-900/30">
-            <!-- <div
-              class="w-16 h-16 rounded-2xl bg-night-950/80 border border-crimson-neon/60 flex items-center justify-center text-crimson-neon text-3xl shadow-crimson-glow">
-              <i class="fa-solid fa-earth-americas"></i>
-            </div> -->
-            <img src="./images/world.png" alt="RestCountries" style="border-radius: 20px;">
-            <!-- <span
-              class="absolute top-3 right-3 text-[10px] font-mono px-2.5 py-1 rounded-full bg-crimson-neon/20 border border-crimson-neon/50 text-crimson-300 font-bold">
-              Countries REST
-            </span> -->
+             class="relative h-48 bg-gradient-to-tr from-crimson-950 via-night-900 to-crimson-900/40 flex items-center justify-center p-4 border-b border-crimson-900/30 overflow-hidden">
+            <img src="./images/world.png" alt="Where in the World preview" class="w-full h-full object-cover rounded-xl"
+              onerror="this.parentElement.innerHTML='<div class=\'flex items-center justify-center w-full h-full text-crimson-neon text-4xl\'><i class=\'fa-solid fa-earth-americas\'></i></div>'">
           </div>
 
           <div class="p-6 flex-1 flex flex-col justify-between">
@@ -976,26 +783,30 @@
                 Where in the World?
               </h3>
               <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
-                A responsive country exploration website using REST APIs. Users can search and filter countries and view
-                detailed country information.
+                Country exploration web application using REST APIs. Features country search, region filtering, and detailed country information display.
               </p>
             </div>
 
             <div>
               <div class="flex flex-wrap gap-1.5 mb-5">
                 <span
-                  class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">JavaScript
-                  ES6+</span>
+                  class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">JavaScript ES6+</span>
                 <span
-                  class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">REST
-                  API</span>
+                  class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">REST API</span>
                 <span
                   class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">CSS3</span>
               </div>
-              <div class="flex items-center gap-3 pt-3 border-t border-crimson-900/30">
+              <div class="grid grid-cols-2 gap-2 pt-3 border-t border-crimson-900/30">
+                <span
+                  class="py-2 px-3 rounded-xl bg-zinc-100 dark:bg-night-850 border border-zinc-200 dark:border-crimson-900/30 text-zinc-400 text-xs font-semibold flex items-center justify-center gap-1.5 cursor-not-allowed select-none"
+                  title="Live Demo not deployed yet">
+                  <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                  <span>Live Demo</span>
+                </span>
                 <a href="https://github.com/Fatma-Elfar" target="_blank" rel="noopener noreferrer"
-                  class="flex-1 py-2 rounded-xl bg-gradient-to-r from-crimson-dark to-crimson-600 text-white text-xs font-semibold text-center hover:shadow-crimson-glow transition-all">
-                  <i class="fa-brands fa-github mr-1"></i> Code Repo
+                  class="py-2 px-3 rounded-xl bg-gradient-to-r from-crimson-dark to-crimson-600 text-white text-xs font-semibold flex items-center justify-center gap-1.5 hover:shadow-crimson-glow transition-all">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
                 </a>
               </div>
             </div>
@@ -1004,18 +815,11 @@
 
         <!-- Project 3: Task Manager -->
         <div
-          class="rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/40 overflow-hidden card-hover shadow-card-glow flex flex-col justify-between">
+          class="rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/40 overflow-hidden card-hover shadow-card-glow flex flex-col justify-between">
           <div
-            class="relative h-44 bg-gradient-to-tr from-night-950 via-[#180308] to-crimson-900/30 flex items-center justify-center p-6 border-b border-crimson-900/30">
-            <!-- <div
-              class="w-16 h-16 rounded-2xl bg-night-950/80 border border-crimson-neon/60 flex items-center justify-center text-crimson-neon text-3xl shadow-crimson-glow">
-              <i class="fa-solid fa-list-check"></i>
-            </div> -->
-            <img src="./images/toDo.png" alt="MovieApp" style="border-radius: 20px;">
-            <!-- <span
-              class="absolute top-3 right-3 text-[10px] font-mono px-2.5 py-1 rounded-full bg-crimson-neon/20 border border-crimson-neon/50 text-crimson-300 font-bold">
-              CRUD App
-            </span> -->
+             class="relative h-48 bg-gradient-to-tr from-crimson-950 via-night-900 to-crimson-900/40 flex items-center justify-center p-4 border-b border-crimson-900/30 overflow-hidden">
+            <img src="./images/toDo.png" alt="Task Manager preview" class="w-full h-full object-cover rounded-xl"
+              onerror="this.parentElement.innerHTML='<div class=\'flex items-center justify-center w-full h-full text-crimson-neon text-4xl\'><i class=\'fa-solid fa-list-check\'></i></div>'">
           </div>
 
           <div class="p-6 flex-1 flex flex-col justify-between">
@@ -1024,8 +828,7 @@
                 Task Manager
               </h3>
               <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
-                A task management application built with React.js, allowing users to add, manage, and organize tasks
-                through a simple responsive interface.
+                A task management application built with React.js, allowing users to add, manage, and organize tasks through a responsive interface.
               </p>
             </div>
 
@@ -1038,10 +841,17 @@
                 <span
                   class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">Bootstrap</span>
               </div>
-              <div class="flex items-center gap-3 pt-3 border-t border-crimson-900/30">
+              <div class="grid grid-cols-2 gap-2 pt-3 border-t border-crimson-900/30">
+                <span
+                  class="py-2 px-3 rounded-xl bg-zinc-100 dark:bg-night-850 border border-zinc-200 dark:border-crimson-900/30 text-zinc-400 text-xs font-semibold flex items-center justify-center gap-1.5 cursor-not-allowed select-none"
+                  title="Live Demo not deployed yet">
+                  <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                  <span>Live Demo</span>
+                </span>
                 <a href="https://github.com/Fatma-Elfar" target="_blank" rel="noopener noreferrer"
-                  class="flex-1 py-2 rounded-xl bg-gradient-to-r from-crimson-dark to-crimson-600 text-white text-xs font-semibold text-center hover:shadow-crimson-glow transition-all">
-                  <i class="fa-brands fa-github mr-1"></i> Code Repo
+                  class="py-2 px-3 rounded-xl bg-gradient-to-r from-crimson-dark to-crimson-600 text-white text-xs font-semibold flex items-center justify-center gap-1.5 hover:shadow-crimson-glow transition-all">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
                 </a>
               </div>
             </div>
@@ -1051,8 +861,158 @@
       </div>
     </section>
 
-    <section id="contact" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section id="education" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center mb-12">
+        <div
+          class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-crimson-950/60 border border-crimson-800/50 text-crimson-neon text-xs uppercase font-bold tracking-widest mb-2">
+          <span>🎓 Academic Path & Training 🎓</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-heading font-extrabold text-zinc-900 dark:text-white">
+          Education & <span class="text-crimson-gradient">Training</span>
+        </h2>
+        <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-2 max-w-lg mx-auto">
+          Academic foundation at Tanta University and structured frontend training programs.
+        </p>
+      </div>
 
+      <!-- University Degree Card -->
+      <div class="max-w-4xl mx-auto mb-10">
+        <div class="relative pl-6 sm:pl-8 border-l-2 border-crimson-neon/60 py-2">
+          <div
+            class="absolute -left-[11px] top-4 w-5 h-5 rounded-full bg-night-950 border-2 border-crimson-neon flex items-center justify-center shadow-crimson-glow">
+            <div class="w-2 h-2 rounded-full bg-crimson-neon"></div>
+          </div>
+
+          <div
+            class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/40 card-hover shadow-card-glow">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <h3 class="text-lg sm:text-xl font-heading font-bold text-zinc-900 dark:text-white">
+                Bachelor's Degree in Computer Science
+              </h3>
+              <span
+                class="px-3 py-1 rounded-full bg-crimson-950 border border-crimson-800 text-crimson-300 font-mono text-xs font-semibold">
+                Expected 2027
+              </span>
+            </div>
+
+            <p class="text-sm font-semibold text-crimson-400 mb-2">
+              Tanta University — Faculty of Computers and Information
+            </p>
+
+            <div class="inline-block px-3 py-1 rounded-lg bg-emerald-950/40 border border-emerald-800/40 text-emerald-400 text-xs font-semibold mb-4">
+              ★ Cumulative Grade: Excellent
+            </div>
+
+            <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              Studying foundational computer science topics including algorithms, data structures, object-oriented programming, and web systems.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Training Programs Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Training 1: ITI React -->
+        <div
+          class="p-6 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/40 card-hover shadow-card-glow flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <span
+                class="px-3 py-1 rounded-full text-[11px] font-mono font-bold bg-crimson-950 border border-crimson-700/60 text-crimson-300">
+                120 Hours
+              </span>
+              <span class="text-xs font-mono text-zinc-400">Jul – Aug 2026</span>
+            </div>
+            <div
+               class="w-11 h-11 rounded-2xl bg-crimson-950 border border-crimson-700/60 flex items-center justify-center text-crimson-neon text-lg shadow-crimson-glow">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-1">
+              React Front-End Training
+            </h3>
+            <p class="text-xs font-semibold text-crimson-400 uppercase tracking-wider mb-3">
+              Information Technology Institute (ITI)
+            </p>
+            <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+              Practical training focused on React.js, JavaScript, and building web applications through hands-on development.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-crimson-900/30">
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">React Hooks</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">SPA</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Training 2: DEPI Track -->
+        <div
+          class="p-6 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/40 card-hover shadow-card-glow flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <span
+                class="px-3 py-1 rounded-full text-[11px] font-mono font-bold bg-crimson-950 border border-crimson-700/60 text-crimson-300">
+                Active Track
+              </span>
+              <span class="text-xs font-mono text-zinc-400">2026 – Present</span>
+            </div>
+            <div
+              class="w-11 h-11 rounded-2xl bg-crimson-950 border border-crimson-700/60 flex items-center justify-center text-crimson-neon text-lg shadow-crimson-glow">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-1">
+              React Front-End Web Developer
+            </h3>
+            <p class="text-xs font-semibold text-crimson-400 uppercase tracking-wider mb-3">
+              Digital Egypt Pioneers Initiative (DEPI)
+            </p>
+            <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+              Practical training focused on React frontend development, structured projects, documentation, and teamwork.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-crimson-900/30">
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">React.js</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">Web Projects</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">Soft Skills</span>
+          </div>
+        </div>
+
+        <!-- Training 3: Route Academy -->
+        <div
+          class="p-6 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/40 card-hover shadow-card-glow flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <span
+                class="px-3 py-1 rounded-full text-[11px] font-mono font-bold bg-crimson-950 border border-crimson-700/60 text-crimson-300">
+                Completed
+              </span>
+              <span class="text-xs font-mono text-zinc-400">May 2025</span>
+            </div>
+            <div
+               class="w-11 h-11 rounded-2xl bg-crimson-950 border border-crimson-700/60 flex items-center justify-center text-crimson-neon text-lg shadow-crimson-glow">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-1">
+              Frontend Development
+            </h3>
+            <p class="text-xs font-semibold text-crimson-400 uppercase tracking-wider mb-3">
+              Route Academy
+            </p>
+            <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+              Frontend development training covering HTML, CSS, JavaScript, responsive design, and practical web layouts.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-crimson-900/30">
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">HTML5/CSS3</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">ES6+</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-night-800 text-zinc-700 dark:text-zinc-300">Bootstrap</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="text-center mb-12">
         <div
           class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-crimson-950/60 border border-crimson-800/50 text-crimson-neon text-xs uppercase font-bold tracking-widest mb-2">
@@ -1061,18 +1021,18 @@
         <h2 class="text-2xl sm:text-4xl font-heading font-extrabold text-zinc-900 dark:text-white">
           Contact <span class="text-crimson-gradient">Fatma</span>
         </h2>
-        <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-2">
-          Have a frontend role, project, or want to discuss React development? Get in touch!
+        <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-2 max-w-md mx-auto">
+          Have an open junior frontend role, project inquiry, or questions about my work? Feel free to reach out.
         </p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 
-        <!-- Left Column: Contact Details Cards -->
+        <!-- Left: Contact Details -->
         <div class="lg:col-span-5 flex flex-col justify-between gap-4">
 
           <div
-            class="p-6 rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/40 shadow-card-glow card-hover">
+            class="p-6 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/40 shadow-card-glow card-hover">
             <div class="flex items-center gap-4">
               <div
                 class="w-12 h-12 rounded-2xl bg-crimson-950 border border-crimson-700/60 flex items-center justify-center text-crimson-neon text-lg shadow-crimson-glow">
@@ -1089,14 +1049,14 @@
           </div>
 
           <div
-            class="p-6 rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/40 shadow-card-glow card-hover">
+            class="p-6 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/40 shadow-card-glow card-hover">
             <div class="flex items-center gap-4">
               <div
                 class="w-12 h-12 rounded-2xl bg-crimson-950 border border-crimson-700/60 flex items-center justify-center text-crimson-neon text-lg shadow-crimson-glow">
                 <i class="fa-solid fa-phone"></i>
               </div>
               <div>
-                <p class="text-xs text-zinc-400 uppercase font-mono">Call / WhatsApp</p>
+                <p class="text-xs text-zinc-400 uppercase font-mono">Phone / WhatsApp</p>
                 <a href="tel:01095964665"
                   class="text-sm sm:text-base font-semibold text-zinc-900 dark:text-white hover:text-crimson-neon transition-colors">
                   01095964665
@@ -1106,7 +1066,7 @@
           </div>
 
           <div
-            class="p-6 rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/40 shadow-card-glow card-hover">
+            class="p-6 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/40 shadow-card-glow card-hover">
             <div class="flex items-center gap-4">
               <div
                 class="w-12 h-12 rounded-2xl bg-crimson-950 border border-crimson-700/60 flex items-center justify-center text-crimson-neon text-lg shadow-crimson-glow">
@@ -1122,17 +1082,18 @@
           </div>
 
           <div
-            class="p-6 rounded-3xl bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/40 shadow-card-glow card-hover">
+            class="p-6 rounded-3xl bg-white dark:bg-night-900/70 border border-crimson-900/40 shadow-card-glow card-hover">
             <div class="flex items-center gap-4">
               <div
                 class="w-12 h-12 rounded-2xl bg-crimson-950 border border-crimson-700/60 flex items-center justify-center text-crimson-neon text-lg shadow-crimson-glow">
                 <i class="fa-brands fa-linkedin-in"></i>
               </div>
               <div>
-                <p class="text-xs text-zinc-400 uppercase font-mono">LinkedIn Network</p>
-                <a href="https://linkedin.com/in/fatma-elfar" target="_blank" rel="noopener noreferrer"
+                <p class="text-xs text-zinc-400 uppercase font-mono">LinkedIn Profile</p>
+                <a href="https://www.linkedin.com/in/fatma-elfar-156539334?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                  target="_blank" rel="noopener noreferrer"
                   class="text-sm sm:text-base font-semibold text-zinc-900 dark:text-white hover:text-crimson-neon transition-colors">
-                  linkedin.com/in/fatma-elfar
+                  Fatma Elfar
                 </a>
               </div>
             </div>
@@ -1140,13 +1101,13 @@
 
         </div>
 
-        <!-- Right Column: Interactive Send Message Form -->
+        <!-- Right: Direct Message Form -->
         <div
-          class="lg:col-span-7 bg-night-900/70 dark:bg-night-900/70 bg-white border border-crimson-900/40 rounded-3xl p-6 sm:p-8 shadow-card-glow">
+          class="lg:col-span-7 bg-white dark:bg-night-900/70 border border-crimson-900/40 rounded-3xl p-6 sm:p-8 shadow-card-glow">
 
           <h3 class="text-lg font-heading font-bold text-zinc-900 dark:text-white mb-6 flex items-center gap-2">
             <i class="fa-regular fa-paper-plane text-crimson-neon"></i>
-            <span>Send Direct Inquiry</span>
+            <span>Send Direct Message</span>
           </h3>
 
           <form id="contactForm" class="space-y-4">
@@ -1165,7 +1126,7 @@
 
             <div>
               <label for="messageSubject" class="block text-xs font-mono uppercase text-zinc-400 mb-1">Subject</label>
-              <input type="text" id="messageSubject" name="subject" required placeholder="Frontend Project / Job Opportunity"
+              <input type="text" id="messageSubject" name="subject" required placeholder="Frontend Project / Opportunity"
                 class="w-full px-4 py-3 rounded-2xl bg-zinc-100 dark:bg-night-950 border border-zinc-300 dark:border-crimson-900/50 text-zinc-900 dark:text-white text-sm focus:outline-none focus:border-crimson-neon focus:ring-1 focus:ring-crimson-neon transition-all" />
             </div>
 
@@ -1180,17 +1141,15 @@
               <i class="fa-solid fa-paper-plane text-xs"></i>
               <span>Send Message</span>
             </button>
-            <p id="formStatus" class="text-sm text-center"></p>
+            <p id="formStatus" class="text-sm text-center pt-2 font-medium"></p>
           </form>
-
-          <!-- Status Message Container (No alert() as specified) -->
-          <div id="formStatus" class="hidden mt-4 p-4 rounded-2xl text-xs font-semibold"></div>
 
         </div>
 
       </div>
     </section>
   </main>
+
 
   <footer class="border-t border-crimson-900/40 bg-night-950 text-zinc-400 py-8 px-4 text-center">
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -1209,8 +1168,9 @@
       <div class="flex gap-4 text-sm text-zinc-400">
         <a href="https://github.com/Fatma-Elfar" target="_blank" rel="noopener noreferrer"
           class="hover:text-crimson-neon transition-colors"><i class="fa-brands fa-github"></i></a>
-        <a href="https://linkedin.com/in/fatma-elfar" target="_blank" rel="noopener noreferrer"
-          class="hover:text-crimson-neon transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/fatma-elfar-156539334?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+          target="_blank" rel="noopener noreferrer" class="hover:text-crimson-neon transition-colors"><i
+            class="fa-brands fa-linkedin-in"></i></a>
         <a href="mailto:fatmaelfar13@gmail.com" class="hover:text-crimson-neon transition-colors"><i
             class="fa-solid fa-envelope"></i></a>
       </div>
@@ -1218,9 +1178,14 @@
   </footer>
 
   <script>
+    /* 1. Theme Management */
     const themeToggleBtn = document.getElementById('themeToggleBtn');
     const themeIcon = document.getElementById('themeIcon');
     const htmlElement = document.documentElement;
+    const bg_icons = document.querySelector('.bgLight');
+    const inner_light = document.querySelector(".inner_light");
+    const outer_light = document.querySelector(".outer_light");
+    const foot = document.querySelector('footer');
 
     function applyTheme(isDark) {
       if (isDark) {
@@ -1230,6 +1195,8 @@
         document.body.classList.add('bg-[#070709]', 'text-zinc-100');
         themeIcon.classList.remove('fa-sun', 'text-yellow-500');
         themeIcon.classList.add('fa-moon', 'text-crimson-neon');
+        inner_light.style.backgroundColor = 'black';
+        outer_light.style.backgroundColor = 'black';
       } else {
         htmlElement.classList.remove('dark');
         htmlElement.classList.add('light');
@@ -1237,10 +1204,14 @@
         document.body.classList.add('bg-zinc-100', 'text-zinc-900');
         themeIcon.classList.remove('fa-moon', 'text-crimson-neon');
         themeIcon.classList.add('fa-sun', 'text-yellow-500');
+        bg_icons.style.backgroundColor = 'whitesmoke';
+        inner_light.style.backgroundColor = 'rgb(245, 225, 230)';
+        outer_light.style.backgroundColor = 'whitesmoke';
+        foot.style.backgroundColor= 'whitesmoke';
+        foot.style.boxShadow = '0 0 5px gray';
       }
     }
 
-    // Default: Dark Mode
     let isDarkMode = true;
     applyTheme(isDarkMode);
 
@@ -1267,7 +1238,6 @@
       }
     });
 
-    // Close mobile menu on anchor click
     document.querySelectorAll('.mobile-nav-link').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
@@ -1292,6 +1262,7 @@
     const holdTime = 1800;
 
     function typeRoles() {
+      if (!typedTextElement) return;
       const currentRole = roles[roleIndex];
 
       if (isDeleting) {
@@ -1320,58 +1291,49 @@
       typeRoles();
     });
 
-    /* 4. Form Handling without Native alert() */
-    // Initialize EmailJS
+    /* 4. Form Handling with EmailJS */
     emailjs.init({
       publicKey: "QJI7Cey8bQxpJp-Qq"
     });
 
-    const contactForm = document.getElementById("contact-form");
-    const submitBtn = document.getElementById("submit-btn");
-    const formStatus = document.getElementById("form-status");
+    const contactForm = document.getElementById("contactForm");
+    const submitBtn = document.getElementById("submitBtn");
+    const formStatus = document.getElementById("formStatus");
 
-    contactForm.addEventListener("submit", async function (event) {
-      event.preventDefault();
+    if (contactForm) {
+      contactForm.addEventListener("submit", async function (event) {
+        event.preventDefault();
 
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = `
-    <i class="fa-solid fa-spinner fa-spin mr-2"></i>
-    Sending...
-  `;
-
-      formStatus.textContent = "";
-
-      try {
-        await emailjs.sendForm(
-          "service_56evd2z",
-          "template_awgl7xk",
-          contactForm
-        );
-
-        formStatus.textContent =
-          "Your message has been sent successfully!";
-        formStatus.className = "text-sm text-green-500";
-
-        contactForm.reset();
-
-      } catch (error) {
-
-        console.error("EmailJS Error:", error);
-
-        formStatus.textContent =
-          "Something went wrong. Please try again.";
-        formStatus.className = "text-sm text-red-500";
-
-      } finally {
-
-        submitBtn.disabled = false;
-
+        submitBtn.disabled = true;
         submitBtn.innerHTML = `
-      <i class="fa-solid fa-paper-plane mr-2"></i>
-      Send Message
-    `;
-      }
-    });
+          <i class="fa-solid fa-spinner fa-spin mr-2"></i>
+          Sending...
+        `;
+        formStatus.textContent = "";
+
+        try {
+          await emailjs.sendForm(
+            "service_56evd2z",
+            "template_awgl7xk",
+            contactForm
+          );
+
+          formStatus.textContent = "Your message has been sent successfully!";
+          formStatus.className = "text-sm text-emerald-500 text-center pt-2 font-medium";
+          contactForm.reset();
+        } catch (error) {
+          console.error("EmailJS Error:", error);
+          formStatus.textContent = "Something went wrong. Please try again.";
+          formStatus.className = "text-sm text-crimson-neon text-center pt-2 font-medium";
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = `
+            <i class="fa-solid fa-paper-plane text-xs"></i>
+            <span>Send Message</span>
+          `;
+        }
+      });
+    }
   </script>
 </body>
 
